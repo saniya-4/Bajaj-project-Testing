@@ -12,7 +12,7 @@ app.use(cors({
   allowedHeaders: ["Content-Type"]
 }));
 
-app.options("*", cors());   // ✅ HANDLE PREFLIGHT EXPLICITLY
+app.use(cors());   // ✅ HANDLE PREFLIGHT EXPLICITLY
 
 app.use(express.json());
 
